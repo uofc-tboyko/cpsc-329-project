@@ -6,6 +6,7 @@
 \normalsize
 \section{Introduction}
 
+\subsection{Modular Congruence and its Properties}
 To begin the background information, we start by defining modular congruence. We say that two numbers $a$ and $b$ are congruent modulo $n$, or that their equivalence classes are equal, if their difference is divisible by $n$:
 \[
 a\equiv b\pmod{n}\iff n|a-b
@@ -36,4 +37,25 @@ Modular congruence is an equivalence relation. This means it is:
             And so we see that $a\equiv c\pmod{n}$.
         \end{proof}
 \end{itemize}
+
+\subsection{Modular Arithmetic}
+
+In order to do anything useful or interesting with modular arithmetic, we must be able to add and subtract within our expressions. We define these as follows:
+
+\begin{itemize}
+    \item If $a+b=c$, then $a+b\equiv c\pmod{n}$.
+    \item If $ab=c$, then $ab\equiv c\pmod{n}$.
+\end{itemize}
+Thanks to these convenient definitions, we inherit convenient properties from the integers:
+\begin{itemize}
+    \item $a+0\equiv a\pmod{n}$, equivalently: $a-a\equiv 0\pmod{n}$
+        \begin{proof} 
+            $a=a+0$, so by transitivity $a\equiv a+0\pmod{n} $.
+        \end{proof}
+    \item $1a\equiv a\pmod{n}$.
+        \begin{proof} 
+            $a=1a$, so by transitivity $a\equiv 1a\pmod{n} $.
+        \end{proof}
+\end{itemize}
+
 \end{document}

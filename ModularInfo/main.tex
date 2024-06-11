@@ -38,6 +38,8 @@ Modular congruence is an equivalence relation. This means it is:
         \end{proof}
 \end{itemize}
 
+The consequence of this is that each element of $\mathbb{Z}_n$ is in exactly one equivalence class. In other words, $[a]_n=[b]_n,$ or $[a]_n\cap [b]_n=\varnothing$.
+
 \subsection{Modular Arithmetic}
 
 In order to do anything useful or interesting with modular arithmetic, we must be able to add and subtract within our expressions. We define these as follows:
@@ -50,12 +52,15 @@ Thanks to these convenient definitions, we inherit convenient properties from th
 \begin{itemize}
     \item $a+0\equiv a\pmod{n}$, equivalently: $a-a\equiv 0\pmod{n}$
         \begin{proof} 
-            $a=a+0$, so by transitivity $a\equiv a+0\pmod{n} $.
+            $a=a+0$, so $a\equiv a+0\pmod{n} $.
         \end{proof}
     \item $1a\equiv a\pmod{n}$.
         \begin{proof} 
-            $a=1a$, so by transitivity $a\equiv 1a\pmod{n} $.
+            $a=1a$, so $a\equiv 1a\pmod{n} $.
         \end{proof}
+        It's important to note that we may not always have a multiplicative inverse, and when we do have one, it may not be unique.
 \end{itemize}
+
+
 
 \end{document}

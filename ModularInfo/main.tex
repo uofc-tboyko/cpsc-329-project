@@ -61,6 +61,15 @@ Thanks to these convenient definitions, we inherit convenient properties from th
         It's important to note that we may not always have a multiplicative inverse, and when we do have one, it may not be unique.
 \end{itemize}
 
+\subsection{Inverses}
+
+In the same way that we can find additive inverses, $a-a\equiv 0\pmod{ n} $, we seek to find multiplicative ones, so that $aa^{-1}\equiv 1\pmod{n} $.
+
+It turns out that $a^{-1}$ exists if and only if $\gcd(a,n)=1$. That is, $a$ and $n$ have no common factors.
+\begin{proof} 
+    $\implies$: Suppose $a$ is invertible. Then $aa^{-1}\equiv 1\pmod{n} $, and $n|aa^{-1}-1$. For some $k\in \mathbb{Z}$, write $nk=aa^{-1}-1$. Rewriting this we get $1=aa^{-1}+nk$. We know that 1 is a common divisor of $a,n$, but we still must show that it is the greatest. Suppose we have another common divisor, $d$ of both $a$ and $n$.
+
+\end{proof}
 
 
 \end{document}

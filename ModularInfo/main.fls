@@ -782,6 +782,7 @@ INPUT main.aux
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb
+INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb
 INPUT /usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb

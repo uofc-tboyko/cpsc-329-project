@@ -65,11 +65,23 @@ Thanks to these convenient definitions, we inherit convenient properties from th
 
 In the same way that we can find additive inverses, $a-a\equiv 0\pmod{ n} $, we seek to find multiplicative ones, so that $aa^{-1}\equiv 1\pmod{n} $.
 
-It turns out that $a^{-1}$ exists if and only if $\gcd(a,n)=1$. That is, $a$ and $n$ have no common factors.
+It turns out that $a^{-1}$ exists if $\gcd(a,n)=1$. That is, $a$ and $n$ have no common factors.
 \begin{proof} 
-    $\implies$: Suppose $a$ is invertible. Then $aa^{-1}\equiv 1\pmod{n} $, and $n|aa^{-1}-1$. For some $k\in \mathbb{Z}$, write $nk=aa^{-1}-1$. Rewriting this we get $1=aa^{-1}+nk$. We know that 1 is a common divisor of $a,n$, but we still must show that it is the greatest. Suppose we have another common divisor, $d$ of both $a$ and $n$.
-
+    Suppose $\gcd(a,n)=1$. By a helpful result called Bezout's lemma, we can say that $ax+ny=1$. Rearranging, we get $ny=ax-1$, and translating into modular language, we get $ax\equiv 1\pmod{n} $. So we have found a multiplicative inverse for $a\pmod{n} $.
 \end{proof}
 
+Can we count the number of invertible elements in $\mathbb{Z}_n$? Yes we can! It will make more sense why we do this later, but for now we simply introduce Euler's totient function $\varphi$. Define $\varphi(n)$ to be equal to the number of positive integers $d$ up to $n$ so that $\gcd(d,m)=1$.
+
+Then since any prime $p$ is not divisible by any number less than itself (by definition of prime), we know that $\varphi(p)=p-1$.
+
+Let's also take a look at numbers of the form $pq$, the product of two primes. Since prime factorizations are unique (See the fundamental theorem of arithmetic), we know that the only divisors of $pq$ are $p,q$. We can also show that $\varphi(pq)=(p-1)(q-1)$. This does generalize to further products of primes, in fact every number, but it quickly becomes complicated and the proof is longer than we'd like to include.
+
+\subsection{Using the Totient}
+
+The motivating theorem for RSA cryptography is the following:
+
+For any modulus $n$, and any $a$ that is coprime with $n$, the identity $a^{\varphi(n)}\equiv 1\pmod{n} $ holds.
+
+The proof again is more complicated, using facts from abstract algebra, namely Lagrange's Theorem. 
 
 \end{document}

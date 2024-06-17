@@ -1,16 +1,14 @@
 \documentclass{article}
-\input{preamble.tex}
 \usepackage{hyperref}
+\input{preamble.tex}
 
 
 \begin{document}
     \huge The Procedure
     \normalsize
     \bigskip
+%TO DO: CHANGE THE ID'S OF EACH TEXTBOX
     \begin{enumerate}
-
-        $TO DO: CHANGE THE ID'S OF EACH TEXTBOX$
-
 \item Bob chooses prime numbers $p,q$ so that $pq=n>c$, where $c$ is the size of the largest message they expect to encrypt. The $n$ is called the key length.
 
 \item Bob also chooses $e,d$ by first computing $\varphi(n)=(p-1)(q-1)$, then choosing $e$ so that $\gcd(e,\varphi(n))=1$. Bob can then release the keypair $(e,n)$, and now Alice, Bob, and Eve respectively have their own step to perform.
@@ -33,23 +31,23 @@
     \begin{enumerate}
         \item What was the message sent by Alice? 
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p1q1, multiline=true]{}
 
         \item What was Bob able to decrypt?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p1q2, multiline=true]{}
 
         \item What was Eve able to encrypt?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p1q3, multiline=true]{}
 
         \item How private was the message?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p1q4, multiline=true]{}
 
         \item For what purposes would you use this level of encryption?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p1q5, multiline=true]{}
 
     \end{enumerate}
 
@@ -63,25 +61,27 @@
     \begin{enumerate}
         \item What was the message sent by Alice? 
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p2q1, multiline=true]{}
 
         \item What was Bob able to decrypt?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p2q2, multiline=true]{}
 
         \item What was Eve able to encrypt?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p2q3, multiline=true]{}
 
         \item How private was the message?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p2q4, multiline=true]{}
 
         \item For what purposes would you use this level of encryption?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p2q5, multiline=true]{}
 
     \end{enumerate}
+
+
     \newpage
     \huge Exercise 3
     \normalsize
@@ -91,23 +91,23 @@
     \begin{enumerate}
         \item What was the message sent by Alice? 
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
 
         \item What was Bob able to decrypt?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q2, multiline=true]{}
 
         \item What was Eve able to encrypt?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q3, multiline=true]{}
 
         \item How private was the message?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q4, multiline=true]{}
 
         \item For what purposes would you use this level of encryption?
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q5, multiline=true]{}
 
     \end{enumerate}
 

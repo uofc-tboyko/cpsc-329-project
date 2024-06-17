@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1717712468 "main.tex" "main.pdf" "main" 1717712475 0
+["pdflatex"] 1718136582 "main.tex" "main.pdf" "main" 1718136586 0
   "/etc/texmf/web2c/texmf.cnf" 1716860963 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
   "/usr/share/texlive/texmf-dist/fonts/map/fontname/texfonts.map" 1577235249 3524 cb3e574dea2d1052e39280babc910dc8 ""
@@ -192,9 +192,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1716923736 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1716923753 7879495 22543199e759579d5f502e498e949529 ""
-  "main.aux" 1717712475 1243 287d6907ddabe524f94360244f7d77f4 "pdflatex"
-  "main.out" 1717712475 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
-  "main.tex" 1717712463 4053 caf7fa7c36b64974ec6a16cd59bb53e7 ""
+  "main.aux" 1718136586 1243 287d6907ddabe524f94360244f7d77f4 "pdflatex"
+  "main.out" 1718136585 0 d41d8cd98f00b204e9800998ecf8427e "pdflatex"
+  "main.tex" 1718136576 4896 b672dba5263887b4dac14150e596456f ""
   "preamble.tex" 1714416986 436 84005251286194089119a74edc58663c ""
   (generated)
   "main.aux"

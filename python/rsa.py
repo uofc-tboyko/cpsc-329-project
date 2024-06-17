@@ -27,7 +27,7 @@ def decode_message(encoded_message):
     encoded_str = str(encoded_message)
     howlong= len(encoded_str)
     #Ensures the encoded string has even length
-    # This was breaking when the input number had an odd number of digits.
+    # This was breaking when the input number had an odd number of digits. The next line ensures this is not an issue:
     if howlong%2!=0:
         encoded_str="0"+encoded_str
     for i in range(0, len(encoded_str), 2):

@@ -1,5 +1,5 @@
 # Fdb version 4
-["pdflatex"] 1717715375 "main.tex" "main.pdf" "main" 1717715379 2
+["pdflatex"] 1718566325 "main.tex" "main.pdf" "main" 1718566327 0
   "/etc/texmf/web2c/texmf.cnf" 1716860963 475 c0e671620eb5563b2130f56340a5fde8 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newpx/zpl_TOsF.enc" 1638997615 2697 c0e4acf9af2683eef1d80f88a94044c0 ""
   "/usr/share/texlive/texmf-dist/fonts/enc/dvips/newtx/ntx-ec-tlf.enc" 1640468671 2914 8283dfc24eaf1964346f843d7605c2b0 ""
@@ -33,12 +33,15 @@
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsya.tfm" 1136768653 972 2c9ffac4bbd20f91c01aaef9bf3f8710 ""
   "/usr/share/texlive/texmf-dist/fonts/tfm/public/txfonts/txsyb.tfm" 1136768653 988 098ca7e8cc5647b9ac21b82dbdce1f01 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb" 1248133631 35752 024fb6c41858982481f6968b5fc26508 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb" 1248133631 32762 224316ccc9ad3ca0423a14971cfa7fc1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI.pfb" 1591219423 25273 57c06ae0831a03c4eb441ef7894a1639 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/NewPXMI_gnu.pfb" 1570136818 16003 379767f2e95213e4cfc7bfd5823fb860 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxmiaX.pfb" 1634156854 55131 37a379baccd50ac17c5ca120b382f7a1 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/pxsys.pfb" 1622581553 40420 f45498301b5afd566294a3567cb80a1d ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplb.pfb" 1640468490 292234 cadeea7dd9f65fcf636cb16396846b94 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplr.pfb" 1640468490 235149 595fa8bf6c04f2c8979a1525afa23361 ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/newpx/zplri.pfb" 1640468490 267932 4fd4e7e3cb85be8c9a5437f17677edd3 ""
+  "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsya.pfb" 1136849748 18865 ebb26de41fddbc82c044d680eec38cec ""
   "/usr/share/texlive/texmf-dist/fonts/type1/public/txfonts/txsyb.pfb" 1136849748 24244 ffc0312cbd155e940e16287bb7cbb16c ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplmi.vf" 1591219423 2556 7db3e3f5fd274b63bfb66a1d0b1e1c0d ""
   "/usr/share/texlive/texmf-dist/fonts/vf/public/newpx/zplmia.vf" 1618176981 1748 43529cca237bd0a988c8893565c9538d ""
@@ -171,9 +174,9 @@
   "/usr/share/texmf/web2c/texmf.cnf" 1681034085 39561 34c98e380bf7c7201ee6a7909aff625a ""
   "/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map" 1716923736 4623455 fa0568a71dd9a288d6c226ee477506c6 ""
   "/var/lib/texmf/web2c/pdftex/pdflatex.fmt" 1716923753 7879495 22543199e759579d5f502e498e949529 ""
-  "main.aux" 1717715378 132 becad25d16353fbd81e5644d2e8bca32 "pdflatex"
-  "main.tex" 1717715373 1824 54dd2e7fa5b2e4b2c5330b57b9761ee5 ""
-  "preamble.tex" 1714416986 436 84005251286194089119a74edc58663c ""
+  "main.aux" 1718566327 584 95b281cc3610ee41e573d1e61198263d "pdflatex"
+  "main.tex" 1718566315 4493 684900a1eb9ad2f87fd8b8f2e7bc1c5c ""
+  "preamble.tex" 1717716943 415 4844511a80d453d18d17585c1a9069f1 ""
   (generated)
   "main.aux"
   "main.log"

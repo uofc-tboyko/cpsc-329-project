@@ -123,23 +123,80 @@
     \begin{enumerate}
         \item Import the rsa.py file.
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
 
         \item Gather the inputs from Bob, aka the public key and the key length.
             
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
 
         \item Use the functions from the rsa.py file to encode a message.
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
 
         \item Once you have your encoded message, encrypt the message.
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
 
         \item Print the encrypted message as a string.
 
-            \TextField[width=6in,height=1in]{}
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+    \end{enumerate}
+
+    \paragraph{bob.py:} Bob’s task is slightly more complex as prime inputs will be required and the numpy and sympy libraries will be utilised.
+
+    \begin{enumerate}
+        \item Import the rsa.py file, and the numpy and sympy libraries.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Create a global boolean variable to keep track of whether prime input will be necessary.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item If prime input is necessary, then prompt the user to give two primes. If not,  proceed as below.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Now prompt the user to enter a lower bound for the amount of characters in the message.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Using pow(), generate a lower length, setting 10 as the base, and the length from above as the exponent.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item To generate our primes, we will use sympy.randprime(), where our input will be lower, and lower*2. Do this twice such that values of p and q are present.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item To ensure our primes are unique, a small while loop is created such that while our p value is equal to our q value, the q value will be regenerated using the same method as above.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Finally, we print our values for p and q as a string, separated by commas.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Now we must generate and return these keys to Bob so he may share them with Alice and Eve, to do this we use our rsa.py file, and use generate_keys to encrypt our p and q values. We also pull the key length.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Print all three values (the public key, private key, and key length) as strings.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Lastly, once Alice has created and encrypted a message, Bob can decode it, thus we create a value to store the message from Alice.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Then we use decrypt_message from the rsa.py file, feeding it the above message from Alice, the private key, and the key length.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+
+        \item Finally, we use decode_message from the rsa.py file on the above value obtained from decrypt_message to obtain the decrypted message from Alice.
+
+            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
 
     \end{enumerate}
 

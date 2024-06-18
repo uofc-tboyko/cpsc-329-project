@@ -163,7 +163,7 @@
 
         \item Then we use \verb|decrypt_message| from the \verb|rsa.py| file, feeding it the above message from Alice, the private key, and the key length.
 
-        \item Finally, we use \verb|decode_message| from the \verb|\verb|rsa.py|| file on the above value obtained from \verb|decrypt_message| to obtain the decrypted message from Alice.
+        \item Finally, we use \verb|decode_message| from the \verb|rsa.py| file on the above value obtained from \verb|decrypt_message| to obtain the decrypted message from Alice.
 
         Paste your code below:
 
@@ -173,23 +173,23 @@
     \paragraph{eve.py:} It is Eve’s task to collect all inputs from Alice and Bob in order to decrypt and decode the messages.
 
     \begin{enumerate}
-        \item Import the rsa.py file, and the numpy and sympy libraries.
+        \item Import the \verb|rsa.py| file, and the numpy and sympy libraries.
 
         \item Gather the inputs from Bob and Alice, aka the public key, key length, and the message from Alice.
 
-        \item Next, using factorint() from the sympy library, factor the key length to find p and q. (Make sure to assign this to a variable, for example, factors).
+        \item Next, using \verb|factorint()| from the sympy library, factor the key length to find $p$ and $q$. (Make sure to assign this to a variable, for example, factors).
 
-        \item Now you will want to check if the length of this is equal to 2. If it is you will want to raise a ValueError, as n should never have exactly two prime factors. If it is not, proceed by returning the factors to Eve (you can do this by factor.keys()).
+        \item Now you will want to check if the length of this is equal to 2. If it is you will want to raise a \verb|ValueError|, as $n$ should never have exactly two prime factors. If it is not, proceed by returning the factors to Eve (you can do this by \verb|factor.keys()|).
 
-        \item Print the primes, p and q, you have found as strings separated by commas.
+        \item Print the primes, $p$ and $q$, you have found as strings separated by commas.
 
-        \item Now you must set your variables (p, q, and n). p and q will be easy enough as they are your primes. n will simply be the two primes multiplied by one another.
+        \item Now you must set your variables ($p$, $q$, and $n$). $p$ and $q$ will be easy enough as they are your primes. $n$ will simply be the two primes multiplied by one another.
 
         \item To get the modular inverse, we need phi-n, which we can obtain by multiplying p-1 and q-1.
 
-        \item Now to get the modular inverse, we will use mod_inverse from the sympy library, with the inputs being the public key and phi-n.
+        \item Now to get the modular inverse, we will use \verb|mod_inverse| from the sympy library, with the inputs being the public key and phi-n.
 
-        \item Finally, to decrypt and decode the message we will use the decrypt_message function from the rsa.py file, our input being the message from Alice, the modular inverse, and our n from earlier.
+        \item Finally, to decrypt and decode the message we will use the \verb|decrypt_message| function from the \verb|rsa.py| file, our input being the message from Alice, the modular inverse, and our $n$ from earlier.
 
         \item The above leaves us with the decrypted message from Alice, which can be printed as a string.
 
@@ -197,5 +197,7 @@
 
             \TextField[width=6in,height=5in, bordercolor=0 0 0, name=bob2, multiline=true]{}
     \end{enumerate}
+
+    The above code can be cross referenced with the provided solutions so as to ensure correct documentation.
 
 \end{document}

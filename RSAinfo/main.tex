@@ -177,17 +177,17 @@
 
         \item Gather the inputs from Bob and Alice, aka the public key, key length, and the message from Alice.
 
-        \item Next, using \verb|factorint()| from the sympy library, factor the key length to find $p$ and $q$. (Make sure to assign this to a variable, for example, $factors$).
+        \item Next, using \verb|factorint()| from the sympy library, factor the key length to find $p$ and $q$. (Make sure to assign this to a variable, for example, \verb|factors|).
 
-        \item Now you will want to check if the length of this is equal to 2. If it is you will want to raise a \verb|ValueError|, as $n$ should never have exactly two prime factors. If it is not, proceed by returning the factors to Eve (you can do this by \verb|factor.keys()|).
+        \item Now you will want to check if the length of this is equal to 2. If it is you will want to raise a \verb|ValueError|, as $n$ should never have exactly two prime factors. If it is not, proceed by returning the factors to Eve (you can obtain these from the dictionary returned by \verb|factorint| using \verb|factors.keys()|).
 
         \item Print the primes, $p$ and $q$, you have found as strings separated by commas.
 
         \item Now you must set your variables ($p$, $q$, and $n$). $p$ and $q$ will be easy enough as they are your primes. $n$ will simply be the two primes multiplied by one another.
 
-        \item To get the modular inverse, we need phi-n, which we can obtain by multiplying $p-1$ and $q-1$.
+        \item To get the modular inverse, we need $\varphi(n)$, which we can obtain by multiplying $p-1$ and $q-1$.
 
-        \item Now to get the modular inverse, we will use \verb|mod_inverse| from the sympy library, with the inputs being the public key and phi-n.
+        \item Now to get the modular inverse, we will use \verb|mod_inverse| from the sympy library, with the inputs being the public key and $\varphi(n)$.
 
         \item Finally, to decrypt and decode the message we will use the \verb|decrypt_message| function from the \verb|rsa.py| file, our input being the message from Alice, the modular inverse, and our $n$ from earlier.
 

@@ -7,7 +7,6 @@
     \huge The Procedure
     \normalsize
     \bigskip
-%TO DO: CHANGE THE ID'S OF EACH TEXTBOX
     \begin{enumerate}
 \item Bob chooses prime numbers $p,q$ so that $pq=n>c$, where $c$ is the size of the largest message they expect to encrypt. The $n$ is called the key length.
 
@@ -116,88 +115,59 @@
     \huge Bonus Exercise
     \normalsize
 
-    As an addition to the manual exercise above, your group will now be guided through how the above steps can be easily automated through a simple python script. The general generation of keys, encoding and decoding of messages, and encrypting and decrypting of messages is provided through an rsa.py file. It is your task to create character files for Bob, Alice, and Eve that will perform the steps you and your group members had to do manually.
+    As an addition to the manual exercise above, your group will now be guided through how the above steps can be easily automated through a simple python script. The general generation of keys, encoding and decoding of messages, and encrypting and decrypting of messages is provided through an \verb|rsa.py| file. It is your task to create character files for Bob, Alice, and Eve that will perform the steps you and your group members had to do manually.
 
     \paragraph{alice.py:} Alice is the simplest of our three characters as all that is required for this portion is to encode, encrypt, and return a message.
 
     \begin{enumerate}
-        \item Import the rsa.py file.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Import the \verb|rsa.py| file.
 
         \item Gather the inputs from Bob, aka the public key and the key length.
             
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
-        \item Use the functions from the rsa.py file to encode a message.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Use the functions from the \verb|rsa.py| file to encode the message.
 
         \item Once you have your encoded message, encrypt the message.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
         \item Print the encrypted message as a string.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+            Paste your code below:
+
+            \TextField[width=6in,height=5in, bordercolor=0 0 0, name=bob, multiline=true]{}
 
     \end{enumerate}
 
     \paragraph{bob.py:} Bob’s task is slightly more complex as prime inputs will be required and the numpy and sympy libraries will be utilised.
 
     \begin{enumerate}
-        \item Import the rsa.py file, and the numpy and sympy libraries.
+        \item Import the \verb|rsa.py| file, and the numpy and sympy libraries.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Create a boolean variable to keep track of whether the user will input their primes, or if they should be provided by the user.
 
-        \item Create a global boolean variable to keep track of whether prime input will be necessary.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
-        \item If prime input is necessary, then prompt the user to give two primes. If not,  proceed as below.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item If the user needs to input primes, then prompt the user to give two primes. If not, proceed as below.
 
         \item Now prompt the user to enter a lower bound for the amount of characters in the message.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Using \verb|pow()|, generate a lower bound for the message length, setting 10 as the base, and the length from above as the exponent.
 
-        \item Using pow(), generate a lower length, setting 10 as the base, and the length from above as the exponent.
+        \item To generate our primes, we will use \verb|sympy.randprime()|, where our input will be lower, and lower*2. Do this twice such that values of $p$ and $q$ are present.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Check that the primes are unique.
 
-        \item To generate our primes, we will use sympy.randprime(), where our input will be lower, and lower*2. Do this twice such that values of p and q are present.
+        \item Finally, we print our values for $p$ and $q$ as a string, separated by commas.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
-        \item To ensure our primes are unique, a small while loop is created such that while our p value is equal to our q value, the q value will be regenerated using the same method as above.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
-        \item Finally, we print our values for p and q as a string, separated by commas.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
-        \item Now we must generate and return these keys to Bob so he may share them with Alice and Eve, to do this we use our rsa.py file, and use generate_keys to encrypt our p and q values. We also pull the key length.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Now we must generate and return these keys to Bob so he may share them with Alice and Eve, to do this we use our \verb|rsa.py| file, and use \verb|generate_keys| to encrypt our $p$ and $q$ values.
 
         \item Print all three values (the public key, private key, and key length) as strings.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Lastly, once Alice has created and encrypted a message, Bob can decode it. Promt the user for the message obtained from Alice.
 
-        \item Lastly, once Alice has created and encrypted a message, Bob can decode it, thus we create a value to store the message from Alice.
+        \item Then we use \verb|decrypt_message| from the \verb|rsa.py| file, feeding it the above message from Alice, the private key, and the key length.
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
+        \item Finally, we use \verb|decode_message| from the \verb|\verb|rsa.py|| file on the above value obtained from \verb|decrypt_message| to obtain the decrypted message from Alice.
 
-        \item Then we use decrypt_message from the rsa.py file, feeding it the above message from Alice, the private key, and the key length.
+        Paste your code below:
 
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
-        \item Finally, we use decode_message from the rsa.py file on the above value obtained from decrypt_message to obtain the decrypted message from Alice.
-
-            \TextField[width=6in,height=1in, bordercolor=0 0 0, name=p3q1, multiline=true]{}
-
+            \TextField[width=6in,height=5in, bordercolor=0 0 0, name=bob2, multiline=true]{}
     \end{enumerate}
 
     \paragraph{eve.py:} It is Eve’s task to collect all inputs from Alice and Bob in order to decrypt and decode the messages.
